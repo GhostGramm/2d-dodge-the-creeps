@@ -9,6 +9,8 @@ public class Player : Area2D
     Vector2 direction = new Vector2(0,0);
     Vector2 screenSize =  new Vector2(0,0);
     Vector2 clampPos = new Vector2(0,0);
+
+    public AnimatedSprite player;
     public override void _Ready()
     {
         
@@ -37,12 +39,15 @@ public class Player : Area2D
         if (Input.IsActionPressed("move_right"))
         {
             direction.x += 1;
-            GD.Print("moving right");
+             GD.Print("moving right");
         }
 
-        if(direction.Length() > 1)
+        if(direction.Length() > 0)
         {
             direction = direction.Normalized();
+            player = GetNode<AnimatedSprite>("AnimatedSprite");
+            player.Play();
+            
         }
 
         this.Position += direction * Speed * delta;
