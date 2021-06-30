@@ -7,9 +7,13 @@ public class Player : Area2D
     int Speed = 400;
     [Export]
     Vector2 direction = new Vector2(0,0);
+    Vector2 screenSize =  new Vector2(0,0);
+    Vector2 clampPos = new Vector2(0,0);
     public override void _Ready()
     {
         
+        screenSize = GetViewportRect().Size;
+        GD.Print(screenSize);
     }
 
     public override void _Process(float delta)
@@ -42,6 +46,10 @@ public class Player : Area2D
         }
 
         this.Position += direction * Speed * delta;
+        GD.Print(Position.x);
+        clampPos.x = Mathf.Clamp(Position.x,0,screenSize.x);
+        clampPos.y = Mathf.Clamp(Position.y,0,screenSize.y);
+        Position = clampPos;
         
     }
 
