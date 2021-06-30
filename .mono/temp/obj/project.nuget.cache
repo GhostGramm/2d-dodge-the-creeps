@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y06l3XdP1MXQ7A8BpOoq10hRPfKZwDsIKQTOU45NAl3ceQxcVGizHSwIg5g//DT0HTrDSO6CVgtPxQ2tOAnjoQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GHOST\\Documents\\2d-dodge-the-creeps\\Dodge the Creeps (2D)- starter project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GHOST\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.0\\microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "C:\\Users\\GHOST\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.0\\microsoft.netframework.referenceassemblies.net472.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

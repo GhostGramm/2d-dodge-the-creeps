@@ -1,0 +1,8 @@
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\bin\Debug\Dodge the Creeps (2D)- starter project.dll
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\bin\Debug\Dodge the Creeps (2D)- starter project.pdb
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\obj\Debug\Dodge the Creeps (2D)- starter project.csprojAssemblyReference.cache
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\obj\Debug\Dodge the Creeps (2D)- starter project.AssemblyInfoInputs.cache
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\obj\Debug\Dodge the Creeps (2D)- starter project.AssemblyInfo.cs
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\obj\Debug\Dodge the Creeps (2D)- starter project.csproj.CoreCompileInputs.cache
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\obj\Debug\Dodge the Creeps (2D)- starter project.dll
+C:\Users\GHOST\Documents\2d-dodge-the-creeps\.mono\temp\obj\Debug\Dodge the Creeps (2D)- starter project.pdb
