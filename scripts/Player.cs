@@ -11,6 +11,8 @@ public class Player : Area2D
     Vector2 clampPos = new Vector2(0,0);
 
     public AnimatedSprite player;
+
+    
     public override void _Ready()
     {
         
@@ -20,6 +22,13 @@ public class Player : Area2D
 
     public override void _Process(float delta)
     {
+        
+        
+    }
+
+    public override void _PhysicsProcess(float delta)
+    {
+        player = GetNode<AnimatedSprite>("AnimatedSprite");
         
         if (Input.IsActionPressed("move_up"))
         {
@@ -45,9 +54,11 @@ public class Player : Area2D
         if(direction.Length() > 0)
         {
             direction = direction.Normalized();
-            player = GetNode<AnimatedSprite>("AnimatedSprite");
             player.Play();
-            
+        }
+        else
+        {
+            player.Stop();
         }
 
         this.Position += direction * Speed * delta;
@@ -55,7 +66,15 @@ public class Player : Area2D
         clampPos.x = Mathf.Clamp(Position.x,0,screenSize.x);
         clampPos.y = Mathf.Clamp(Position.y,0,screenSize.y);
         Position = clampPos;
-        
+
+        if(direction.x > 0)
+        {
+            player.Animation = "right";
+        }
+        else if(direction.y > 0)
+        {
+            player.Animation = "up";
+        }
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
